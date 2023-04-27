@@ -7,6 +7,66 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 
+/*=============== ACTIVE TAB ===============*/
+const tabs = document.querySelectorAll('.nav__item')
+
+function hideOtherSections () {
+	const allSections = document.querySelectorAll('section')
+
+	for(let i = 0; i < allSections.length; i++) {
+		allSections[i].style.display = "none"
+	}
+}
+
+function changeTab() {
+	const selector = this.dataset.activate
+	if(selector) {
+		const el = document.querySelector(selector)
+		hideOtherSections()
+		el.style.display = 'block'
+	}
+}
+
+for(let i = 0; i < tabs.length; i++){
+	const tab = tabs[i]
+	tab.addEventListener('click', changeTab, false)
+}
+
+/*=============== ACTIVE LINK ===============*/
+
+const navLink = document.querySelectorAll('.nav__link')
+
+function activeLink () {
+	navLink.forEach(n => n.classList.remove('active-link'))
+	this.classList.add('active-link')
+}
+
+navLink.forEach(n => n.addEventListener('click', activeLink))
+
+/*=============== ABOUT ME BUTTON ===============*/
+document.addEventListener('click', (e) => {
+	if(e.target.classList.contains('button__about')){
+		const about = document.querySelector('.about')
+		const aboutLink = document.querySelector('.about__link')
+		hideOtherSections()
+		about.style.display = 'block'
+		navLink.forEach(n => n.classList.remove('active-link'))
+		aboutLink.classList.add('active-link')
+	}
+})
+
+/*=============== CONTACT BUTTON ===============*/
+document.addEventListener('click', (b) => {
+	if(b.target.classList.contains('button__contact')){
+		const contact = document.querySelector('.contact')
+		const contactLink = document.querySelector('.contact__link')
+		hideOtherSections()
+		contact.style.display = 'block'
+		navLink.forEach(n => n.classList.remove('active-link'))
+		contactLink.classList.add('active-link')
+	}
+})
+
 /*=============== ABOUT MODAL ===============*/
 const modalViews = document.querySelectorAll('.about__modal'),
 	  modalBtns = document.querySelectorAll('.about__button'),
@@ -49,27 +109,6 @@ function activeProject () {
 }
 
 linkProject.forEach(l=> l.addEventListener('click', activeProject))
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
-    
-const scrollActive = () =>{
-  	const scrollY = window.pageYOffset
-
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link')
-		}else{
-			sectionsClass.classList.remove('active-link')
-		}                                                    
-	})
-}
-window.addEventListener('scroll', scrollActive)
 
 /*=============== LIGHT DARK THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')

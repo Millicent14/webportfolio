@@ -24,32 +24,32 @@
 
                 <div class="nav__menu">
                     <ul class="nav__list">
-                        <li class="nav__item">
+                        <li class="nav__item" data-activate="#home">
                             <a href="#home" class="nav__link  active-link">
                                 <i class='bx bx-home-alt'></i>
                             </a>
                         </li> 
 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
+                        <li class="nav__item" data-activate="#about">
+                            <a href="#about" class="nav__link about__link">
                                <i class='bx bx-user'></i> 
                             </a>
                         </li>
 
-                        <li class="nav__item">
+                        <li class="nav__item" data-activate="#skills">
                             <a href="#skills" class="nav__link">
                                <i class='bx bx-book' ></i> 
                             </a>
                         </li>
 
-                        <li class="nav__item">
+                        <li class="nav__item" data-activate="#projects">
                             <a href="#projects" class="nav__link">
                                 <i class='bx bx-briefcase-alt-2' ></i>
                             </a>
                         </li> 
 
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
+                        <li class="nav__item" data-activate="#contact">
+                            <a href="#contact" class="nav__link  contact__link">
                                 <i class='bx bx-message-square-detail' ></i>
                             </a>
                         </li>       
@@ -76,8 +76,8 @@
                             <a download="" href="assets/pdf/resume.pdf" class="button button--ghost">
                                 Download CV
                             </a>
-                            <a href="#about" class="button">About me</a>
-                        </div>
+                            <a href="#about" class="button button__about">About me</a> 
+                        </div>     
                     </div>
 
                     <div class="home__handle">
@@ -92,11 +92,6 @@
                             <i class='bx bxl-github' ></i>
                         </a>
                     </div>
-
-                    <a href="#about" class="home__scroll">
-                        <i class='bx bx-mouse home__scroll-icon'></i>
-                        <span class="home__scroll-name">Scroll Down</span>
-                    </a>
                 </div>
             </section>
             
@@ -233,7 +228,7 @@
                                             <li class="about__modal-item">
                                                 <i class='bx bx-check about__modal-icon' ></i>
                                                 <p class="about__modal-info">
-                                                    Developer Career Program <a href="https://share.zertify.zuitt.co/certificate/64ad8b40-2d18-4858-b62c-4b20089d0712/">
+                                                    Developer Career Program <a href="https://share.zertify.zuitt.co/certificate/64ad8b40-2d18-4858-b62c-4b20089d0712/" target="_blank">
                                                         <i class='bx bx-link-external about__modal-link' ></i>
                                                     </a>   
                                                 </p>
@@ -242,7 +237,7 @@
                                             <li class="about__modal-item">
                                                 <i class='bx bx-check about__modal-icon' ></i>
                                                 <p class="about__modal-info">
-                                                    Full Stack Course <a href="https://share.zertify.zuitt.co/certificate/595f136a-f219-45d6-bbef-0887f65a92fc/">
+                                                    Full Stack Course <a href="https://share.zertify.zuitt.co/certificate/595f136a-f219-45d6-bbef-0887f65a92fc/" target="_blank">
                                                         <i class='bx bx-link-external about__modal-link' ></i>
                                                     </a>   
                                                 </p>
@@ -251,7 +246,7 @@
                                             <li class="about__modal-item">
                                                 <i class='bx bx-check about__modal-icon' ></i>
                                                 <p class="about__modal-info">
-                                                    Backend Course <a href="https://share.zertify.zuitt.co/certificate/6f8dd552-e0cc-4cc2-a73d-42eb5033a660/">
+                                                    Backend Course <a href="https://share.zertify.zuitt.co/certificate/6f8dd552-e0cc-4cc2-a73d-42eb5033a660/" target="_blank">
                                                         <i class='bx bx-link-external about__modal-link' ></i>
                                                     </a>   
                                                 </p>
@@ -260,7 +255,7 @@
                                             <li class="about__modal-item">
                                                 <i class='bx bx-check about__modal-icon' ></i>
                                                 <p class="about__modal-info">
-                                                    Frontend Course <a href="https://share.zertify.zuitt.co/certificate/e59d2c5b-d500-4188-ad92-2adbaddece01/">
+                                                    Frontend Course <a href="https://share.zertify.zuitt.co/certificate/e59d2c5b-d500-4188-ad92-2adbaddece01/" target="_blank">
                                                         <i class='bx bx-link-external about__modal-link' ></i>
                                                     </a>   
                                                 </p>
@@ -269,11 +264,21 @@
                                             <li class="about__modal-item">
                                                 <i class='bx bx-check about__modal-icon' ></i>
                                                 <p class="about__modal-info">
-                                                    Introduction to JS OOP Short Course <a href="https://share.zertify.zuitt.co/certificate/26911165-84d5-41e6-8eb6-16d906d78fe0/">
+                                                    Introduction to JS OOP Short Course <a href="https://share.zertify.zuitt.co/certificate/26911165-84d5-41e6-8eb6-16d906d78fe0/" target="_blank">
                                                         <i class='bx bx-link-external about__modal-link' ></i>
                                                     </a>   
                                                 </p>
                                             </li>
+
+                                            <li class="about__modal-item">
+                                                <i class='bx bx-check about__modal-icon' ></i>
+                                                <p class="about__modal-info">
+                                                    Intro to Amazon S3 <a href="assets/pdf/amazons3.pdf" target="_blank">
+                                                        <i class='bx bxs-file-pdf about__modal-file'></i>
+                                                    </a>   
+                                                </p>
+                                            </li>
+
                                         </ul>
 
                                         <h3 class="about__modal-title">Special Awards</h3>
@@ -285,7 +290,7 @@
                                             <li class="about__modal-item">
                                                 <i class='bx bx-check about__modal-icon' ></i>
                                                 <p class="about__modal-info">
-                                                    Enthusiastic Learner Award <a href="assets/img/enthusiastic.png">
+                                                    Enthusiastic Learner Award <a href="assets/img/enthusiastic.png" target="_blank">
                                                         <i class='bx bxs-file-png about__modal-file' ></i>
                                                     </a>   
                                                 </p>
@@ -294,7 +299,7 @@
                                             <li class="about__modal-item">
                                                 <i class='bx bx-check about__modal-icon' ></i>
                                                 <p class="about__modal-info">
-                                                    Awesome Attitude Award <a href="assets/img/awesome.png">
+                                                    Awesome Attitude Award <a href="assets/img/awesome.png" target="_blank">
                                                         <i class='bx bxs-file-png about__modal-file' ></i>
                                                     </a>   
                                                 </p>
@@ -303,7 +308,7 @@
                                             <li class="about__modal-item">
                                                 <i class='bx bx-check about__modal-icon' ></i>
                                                 <p class="about__modal-info">
-                                                    Kindness Counts Award <a href="assets/img/kindness.png">
+                                                    Kindness Counts Award <a href="assets/img/kind.png" target="_blank">
                                                         <i class='bx bxs-file-png about__modal-file' ></i>
                                                     </a>   
                                                 </p>
@@ -318,7 +323,7 @@
                             Career-shifter with experience in designing and creating user-friendly and responsive website, and E-Commerce API.
                         </p>
 
-                        <a href="#contact" class="button">Contact Me</a>
+                        <a href="#contact" class="button button__contact">Contact Me</a>
                     </div>
                 </div>
             </section>
@@ -422,8 +427,8 @@
 
             <!--=============== PROJECTS ===============-->
             <section class="project section" id="projects">
-                <span class="section__subtitle">My Portfolio</span>
-                <h2 class="section__title">Recent projects</h2>
+                <span class="section__subtitle">Portfolio</span>
+                <h2 class="section__title">My projects</h2>
 
                 <div class="project__filters">
                     <span class="project__item active-project" data-filter='all'>All</span>
@@ -436,8 +441,14 @@
                         <img src="assets/img/nextjsportfolio.png" alt="" class="project__img">
 
                         <h3 class="project__title">Next JS Portfolio</h3>
+                        <div class="project__tools">
+                            <span>ReactJs</span>
+                            <span>ThreeJs</span>
+                            <span>Framer Motion</span>
+                            <span>GraphQL</span>
+                        </div>
 
-                        <a href="https://developer-portfolio-millicentmhernandez.vercel.app/" class="project__button">
+                        <a href="https://developer-portfolio-millicentmhernandez.vercel.app/" target="_blank" class="project__button">
                             Live Preview <i class='bx bx-right-arrow-alt project__icon' ></i>
                         </a>
                     </div>
@@ -447,7 +458,14 @@
 
                         <h3 class="project__title">E-Commerce API</h3>
 
-                        <a href="https://capstone3-hernandez.vercel.app/" class="project__button">
+                        <div class="project__tools">
+                            <span>MongoDB</span>
+                            <span>ExpressJs</span>
+                            <span>ReactJs</span>
+                            <span>NodeJs</span>
+                        </div>
+
+                        <a href="https://capstone3-hernandez.vercel.app/" target="_blank" class="project__button">
                             Live Preview <i class='bx bx-right-arrow-alt project__icon' ></i>
                         </a>
                     </div>
@@ -457,7 +475,13 @@
 
                         <h3 class="project__title">Developer Portfolio</h3>
 
-                        <a href="https://millicent14.github.io/webportfolio/" class="project__button">
+                        <div class="project__tools">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="https://millicent14.github.io/webportfolio/" target="_blank" class="project__button">
                             Live Preview <i class='bx bx-right-arrow-alt project__icon' ></i>
                         </a>
                     </div>
@@ -493,11 +517,25 @@
                                 <a href="https://m.me/sanghernandez" target="blank" class="contact__button">Messenger <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
                                 </a>
                             </div>
+                        </div>
+
+                        <div>
+                            <h3 class="contact__findme">Find me:</h3>
+
+                            <ul class="contact__social">
+                                <a href="https://www.facebook.com/sanghernandez" target="_blank" class="contact__social-link">
+                                    <i class='bx bxl-facebook' ></i>    
+                                </a>
+
+                                <a href="https://www.instagram.com/millieficent14/" target="_blank" class="contact__social-link">
+                                    <i class='bx bxl-instagram' ></i>
+                                </a>
+                            </ul>
                         </div>  
                     </div>
 
                     <div class="contact__content">
-                        <h3 class="contact__title">Write me your project</h3>
+                        <h3 class="contact__title">Send me a message</h3>
 
                         <form action="" class="contact__form">
                             <div class="contact__form-div">
@@ -515,7 +553,7 @@
                                 <textarea name="" id="" cols="30" rows="10" placeholder="Describe your project" class="contact__form-input"></textarea>
                             </div>
 
-                            <button class="button"></a>Send Message</button>
+                            <button class="button"><a href="mailto:millicentmhernandez@gmail.com" target="_blank" class="send__button">Send</a></button>
                         </form> 
                     </div>
                 </div>
@@ -525,20 +563,8 @@
         <!--=============== FOOTER ===============-->
         <footer class="footer">
             <div class="footer__container container">
-                <h3 class="footer__title">Find me:</h3>
-
-                <ul class="footer__social">
-                    <a href="https://www.facebook.com/sanghernandez" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-facebook' ></i>    
-                    </a>
-
-                    <a href="https://www.instagram.com/millieficent14/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-                </ul>
-
                 <span class="footer__copy">
-                    &#169; Millie
+                    &#169; Millie                    
                 </span>
             </div>  
         </footer>
