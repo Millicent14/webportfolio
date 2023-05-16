@@ -43,6 +43,18 @@ function activeLink () {
 
 navLink.forEach(n => n.addEventListener('click', activeLink))
 
+/*=============== NAV LOGO ===============*/
+document.addEventListener('click', (l) => {
+	if(l.target.classList.contains('nav__logo')){
+		const home = document.querySelector('.home')
+		const homeLink = document.querySelector('.home__link')
+		hideOtherSections()
+		home.style.display = 'block'
+		navLink.forEach(n => n.classList.remove('active-link'))
+		homeLink.classList.add('active-link')
+	}
+})
+
 /*=============== ABOUT ME BUTTON ===============*/
 document.addEventListener('click', (e) => {
 	if(e.target.classList.contains('button__about')){
